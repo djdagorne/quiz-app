@@ -1,3 +1,23 @@
-div {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body *{
+    padding: 10px;
     text-align: center;
+}
+
+input{
+    display: inline block;
+    border: 1px black solid;
+}
+
+.userScore {
+    display: inline-block;
+}
+
+.questionNumber {
+    display: inline-block;
 }

@@ -1,27 +1,28 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>nintendont</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
     
-    <script src="index.js"></script>
-    <script src="//code.jquery.com/jquery.min.js"></script>
+    <!-- <script src="index.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script> -->
   </head>
   <body>
       <header class="banner">
-          <h1>Quiz Time!</h1>
+          <img src="imgs/1280px-Nintendo.svg.png" alt="Nintendo Logo" height="100" width="250">
+          <h1>Quiz App</h1>
+          <div class="questionNumber">Question: 1/10</div>
+          <div class="userScore">Score: 0/10</div>
       </header>
-      <div class="question-area">
-            <h2>Question 1 goes here</h2>
-            <form >
-                <input type="radio" name="choice" value="option 1"> option 1</input>
-                <input type="radio" name="choice" value="option 2"> option 2</input>                   
-                <input type="radio" name="choice" value="option 3"> option 3</input>                   
-                <input type="radio" name="choice" value="option 4"> option 4</input>
+      <div class="question-answer-area">
+            <h2 class="question-area">Which year did Mario first appear in a video game?</h2>
+            <form class="answer-area">
+                <input type="radio" name="user-choice" value="option 1"> 1981</input><br>
+                <input type="radio" name="user-choice" value="option 2"> 1985</input><br>                 
+                <input type="radio" name="user-choice" value="option 3"> 1983</input><br>                   
+                <input type="radio" name="user-choice" value="option 4"> 1982</input><br>
             </form>
             <button>Submit Answer</button> 
       </div>
