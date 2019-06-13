@@ -21,3 +21,8 @@ input{
 .questionNumber {
     display: inline-block;
 }
+
+#question-one-img{
+    width: 400px;
+    height: 300px;
+}
