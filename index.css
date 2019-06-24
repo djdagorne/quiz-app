@@ -28,19 +28,11 @@ fieldset{
 
 .answer-img{
     width: 400px;
-<<<<<<< HEAD
     max-height: 300px;
-=======
-    height: 300px;
->>>>>>> caecc79ed02c8e4fd02277a91381e08bda2f3b45
 }
 
 button {
     display: block;
     max-width: 300px;
     margin: auto;
-<<<<<<< HEAD
 }
-=======
-  }
->>>>>>> caecc79ed02c8e4fd02277a91381e08bda2f3b45
