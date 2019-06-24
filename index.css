@@ -1,12 +1,50 @@
 * {
+    font-family: poppins;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    background: #e62206;
+}
+
+.correct-answer img{
+    padding:0;
+    border: 10px green solid;
+}
+
+.wrong-answer img{
+    padding:0;
+    border: 10px red solid;
+}
+
+
 body *{
-    padding: 10px;
     text-align: center;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    color: white;
+}
+
+main{
+    display: border-box;
+    background: white;
+    width: 500px;
+    padding: 10px;
+    padding-bottom:20px;
+    padding-top:20px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom:40px; 
+    border-radius: 4px;
 }
 
 input{
@@ -14,11 +52,75 @@ input{
     border: 1px black solid;
 }
 
+/* label {
+    display: flex;
+    padding:10px;
+    margin:auto;
+    margin-bottom:6px;
+    //border: 1px red solid;
+    font-size: 18px;
+    font-weight: 500;
+} */
+
+label {
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type="radio"]{
+    /* padding:0;
+    align-self: auto; */
+    margin-right: 10px;
+    border: 1px blue solid;
+}
+
 fieldset{
-  align-content:  center;
+    padding: 0;
+    border: 0;
+    /* margin: 0;
+    align-content:  center; */
+}
+
+button{
+    padding: 10px;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    height:auto;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+    background-color: #3064f4;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600; 
+    border-radius: 4px;
+}
+
+button:hover,
+button:focus{
+    background-color: #103cd4;
+    -webkit-transition: background 0.1s;
+    -moz-transition: background 0.1s;
+    -o-transition: background 0.1s;
+    transition: background 0.1s;
 }
 
 .userScore {
+    padding: 10px;
     display: inline-block;
 }
 
@@ -27,12 +129,6 @@ fieldset{
 }
 
 .answer-img{
-    width: 400px;
+    max-width: 400px;
     max-height: 300px;
-}
-
-button {
-    display: block;
-    max-width: 300px;
-    margin: auto;
 }

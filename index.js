@@ -1,5 +1,5 @@
 //VARIABLES
-var qNum = 9; //keeps track of which question/answer object to render
+var qNum = 0; //keeps track of which question/answer object to render
 var userScore = 0; //keeps track of how many questions were correct overall
 
 function startQuiz(event){
@@ -39,7 +39,7 @@ function userScoreTracker(){
 function correctAnswerScreen(){
   ++userScore;
   $('main').html(`
-  <div class="post-question-box">
+  <div class="post-question-box correct-answer">
     <div class="stats">
       <span class="question-${qNum+1}">Question: ${qNum+1}/10</span>
       <span class="userScore">Score: ${userScore}/10</span>
@@ -62,7 +62,7 @@ function correctAnswerScreen(){
 
 function wrongAnswerScreen(){
   $('main').html(`
-    <div class="post-question-box">
+    <div class="post-question-box wrong-answer">
     <div class="stats">
       <span class="question-${qNum+1}">Question: ${qNum+1}/10</span>
       <span class="userScore">Score: ${userScore}/10</span>
@@ -85,14 +85,15 @@ function generateQuestion(qList){
     <span class="question-${qNum+1}">Question: ${qNum+1}/10</span>
     <span class="userScore">Score: ${userScore}/10</span>
   </div>
-  <h2 class="question-area">${qList[qNum].question}</h2>
+  
   <div class="question-answer-area">
+    <h2 class="question-area">${qList[qNum].question}</h2>
     <form class="answer-area">
     <fieldset class="fieldset-answers">
-      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[0]}" required>${qList[qNum].answers[0]}</label><br>
-      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[1]}" required>${qList[qNum].answers[1]}</label><br>
-      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[2]}" required>${qList[qNum].answers[2]}</label><br>
-      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[3]}" required>${qList[qNum].answers[3]}</label><br>   
+      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[0]}" required><span>${qList[qNum].answers[0]}</span></label>
+      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[1]}" required><span>${qList[qNum].answers[1]}</span></label>
+      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[2]}" required><span>${qList[qNum].answers[2]}</span></label>
+      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[3]}" required><span>${qList[qNum].answers[3]}</span></label>  
       <button type='submit' class="submit-answer-button">Submit Answer</button>
     </fieldset>
     </form>

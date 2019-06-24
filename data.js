@@ -26,7 +26,7 @@ const STORE = [
       alt: 'Mario in Mario Kart 8'
     },
     {
-      question: 'When did Bowser first appear?',
+      question: 'When did Bowser first appear in a Nintendo game?',
       answers: [
         '1981',
         '1983',
