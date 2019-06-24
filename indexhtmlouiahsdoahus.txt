@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Nintendo Trivia Quiz</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    
+    <script src="index.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+  </head>
+  <body>
+      <header class="banner">
+          <img src="imgs/1280px-Nintendo.svg.png" alt="Nintendo Logo" height="100" width="250">
+          <h1>Quiz App</h1>
+          <div class="questionNumber">Question: 1/10</div>
+          <div class="userScore">Score: 0/10</div>
+      </header>
+      <li class="question-answer-area">
+        <h2 class="question-area">Which year did Mario first appear in a video game?</h2>
+          <form class="answer-area">
+              <input type="radio" name="user-choice" value="A"> 1981</input><br>
+              <input type="radio" name="user-choice" value="B"> 1985</input><br>                 
+              <input type="radio" name="user-choice" value="C"> 1983</input><br>                   
+              <input type="radio" name="user-choice" value="D"> 1982</input><br>
+          </form>
+          <button class="submit-answer-button">Submit Answer</button> 
+        </li>
+  </body>
+</html>

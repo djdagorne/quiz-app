@@ -14,6 +14,10 @@ input{
     border: 1px black solid;
 }
 
+fieldset{
+  align-content:  center;
+}
+
 .userScore {
     display: inline-block;
 }
@@ -22,7 +26,13 @@ input{
     display: inline-block;
 }
 
-#question-one-img{
+.answer-img{
     width: 400px;
-    height: 300px;
+    max-height: 300px;
+}
+
+button {
+    display: block;
+    max-width: 300px;
+    margin: auto;
 }
