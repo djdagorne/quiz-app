@@ -152,58 +152,51 @@ button:focus{
     -ms-user-select: none;
     user-select: none;
     background:#dadada;
-  }
-  
-  /* Hide the browser's default radio button */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* Create a custom radio button */
-  .checkmark {
-    position: absolute;
-    top:8px;
-    left: 10px;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+}
+
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+
+.checkmark {
+position: absolute;
+top:8px;
+left: 10px;
+height: 25px;
+width: 25px;
+background-color: #eee;
+border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark,
+.container:focus input ~ .checkmark {
+background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+background-color: #3064f4;
+}
+
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark,
-  .container:focus input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    background-color: #3064f4;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .container .checkmark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: white;
-  }
+    background: white;
+}
 
 @media screen and (max-width: 1000px) {
     main{
@@ -230,5 +223,11 @@ button:focus{
     .answer-img{
         max-width: 300px;
         max-height: 250px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1{
+       font-size:20px;
     }
 }
