@@ -90,10 +90,10 @@ function generateQuestion(qList){
     <h2 class="question-area">${qList[qNum].question}</h2>
     <form class="answer-area">
     <fieldset class="fieldset-answers">
-      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[0]}" required><span>${qList[qNum].answers[0]}</span></label>
-      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[1]}" required><span>${qList[qNum].answers[1]}</span></label>
-      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[2]}" required><span>${qList[qNum].answers[2]}</span></label>
-      <label><input type="radio" name="user-choice" value="${qList[qNum].answers[3]}" required><span>${qList[qNum].answers[3]}</span></label>  
+      <label class="container">${qList[qNum].answers[0]}<input type="radio" name="user-choice" value="${qList[qNum].answers[0]}" required><span class="checkmark"></span></label>
+      <label class="container">${qList[qNum].answers[1]}<input type="radio" name="user-choice" value="${qList[qNum].answers[1]}" required><span class="checkmark"></span></label>
+      <label class="container">${qList[qNum].answers[2]}<input type="radio" name="user-choice" value="${qList[qNum].answers[2]}" required><span class="checkmark"></span></label>
+      <label class="container">${qList[qNum].answers[3]}<input type="radio" name="user-choice" value="${qList[qNum].answers[3]}" required><span class="checkmark"></span></label>  
       <button type='submit' class="submit-answer-button">Submit Answer</button>
     </fieldset>
     </form>
